@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOney master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+<header>
+    <div class="grid grid-cols-2">
+       <div class="w-full mt-4"> 
+        <img src="https://www.econlib.org/wp-content/uploads/2016/10/hundredscash.jpg" alt="" class="w-9/12 m-auto h-full">
+    </div>
+        
+        
+      
+       <div class="w-full ">
+        <label for="">Income:</label>
+        <input type="text" id="income"  class="border mt-4 p-2 w-3/4"><br>
+
+        <h3 class="text-2xl font-bold text-center mt-4">Expenses</h3>
+
+        <label for="">Food:</label>      
+        <input type="text" id="food"  class="border mt-4 p-2 w-3/4"><br> 
+
+        <label for="">Rent:</label>
+        <input type="text" id="rent"  class="border mt-4 p-2 w-3/4">
+        <br>
+        <label for="">Clothes:</label>
+        <input type="text" id="clothes"  class="border mt-4 p-2 w-3/4">
+   <br>
+       <div class="text-center mt-4">
+        <button class="border px-4 py-2 rounded bg-sky-400" id="calc-btn">Calculate</button>
+    </div>
+        <h3 class="text-2xl font-bold text-center mt-4" >Total Expenses: <span id="total-expenses"></span></h3>
+        <h3 class="text-2xl font-bold text-center mt-4">Balance: <span id="balance"></span></h3>
+      <div class="m-4">
+        <label for="">Save</label>
+        <input type="text" id="percent"  class="border mt-4 p-2">
+        <span>%</span>
+        <button class="border px-4 py-2 rounded bg-sky-400" id="save">Save</button>
+      </div>
+        <h3 class="text-2xl font-bold text-center mt-4">Saving amount: <span id="saving-amount"></span></h3>
+        <h3 class="text-2xl font-bold text-center mt-4">Remaining Balance: <span id="remaining"></span></h3>
+       </div>
+            
+          
+        
+    </div>
+</header>
+
+
+
+
+    <script src="app.js"></script>
 </body>
 </html>
